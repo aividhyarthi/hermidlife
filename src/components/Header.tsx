@@ -1,48 +1,56 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "#problem", label: "The Problem" },
-  { href: "#solution", label: "What We Do" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "What We Treat" },
   { href: "#how-it-works", label: "How It Works" },
-  { href: "#market", label: "Why Now" },
+  { href: "#why-us", label: "Why HerMidlife" },
   { href: "#team", label: "Our Team" },
+  { href: "#b2b", label: "For Employers" },
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-sand">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-warm-white/95 backdrop-blur-md shadow-sm" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18 sm:h-20">
           <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-primary">
-              Her<span className="text-accent">Midlife</span>
+            <span className="text-2xl font-display font-bold text-rose-dark">
+              Her<span className="text-sage-dark">Midlife</span>
             </span>
           </a>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-7">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
+                className="text-sm font-medium text-foreground/60 hover:text-rose transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
-              href="mailto:hello@hermidlife.com.au"
-              className="inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold text-white gradient-cta hover:opacity-90 transition-opacity"
+              href="mailto:rudra@appstudiox.com"
+              className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-white gradient-cta hover:opacity-90 transition-opacity shadow-md"
             >
-              Get in Touch
+              Start Your Journey
             </a>
           </nav>
 
           <button
-            className="md:hidden p-2 text-foreground/70"
+            className="lg:hidden p-2 text-foreground/70"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -57,24 +65,26 @@ export default function Header() {
         </div>
 
         {mobileOpen && (
-          <nav className="md:hidden pb-4 space-y-2">
+          <nav className="lg:hidden pb-6 space-y-1 bg-warm-white/95 backdrop-blur-md rounded-b-2xl">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block px-3 py-2 text-sm font-medium text-foreground/70 hover:text-primary"
+                className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-rose hover:bg-blush/30 rounded-xl transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href="mailto:hello@hermidlife.com.au"
-              className="block mx-3 text-center px-5 py-2.5 rounded-full text-sm font-semibold text-white gradient-cta"
-              onClick={() => setMobileOpen(false)}
-            >
-              Get in Touch
-            </a>
+            <div className="px-4 pt-2">
+              <a
+                href="mailto:rudra@appstudiox.com"
+                className="block text-center px-6 py-3 rounded-full text-sm font-semibold text-white gradient-cta"
+                onClick={() => setMobileOpen(false)}
+              >
+                Start Your Journey
+              </a>
+            </div>
           </nav>
         )}
       </div>

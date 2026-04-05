@@ -1,54 +1,70 @@
 const steps = [
   {
     step: "01",
-    title: "Check Your Symptoms",
-    description: "Take our free AI-powered symptom assessment. In just a few minutes, you'll get a personalised report that helps you understand what's going on with your body.",
-    color: "from-primary to-primary-dark",
+    title: "Complete Your Health Assessment",
+    description: "A guided intake that maps your hormonal health, lifestyle, and symptoms — creating a personalised profile your care team can act on immediately.",
+    color: "from-rose to-rose-dark",
+    line: "bg-rose/30",
   },
   {
     step: "02",
-    title: "Talk to a Specialist",
-    description: "Book a telehealth consultation with a practitioner who genuinely understands perimenopause. No more being told it's just stress.",
-    color: "from-accent to-sage-dark",
+    title: "Consult With a Specialist Doctor",
+    description: "Connect with a midlife-trained GP via telehealth. No more being told it's just stress. Get real answers and a clear diagnosis — same day.",
+    color: "from-plum to-rose-dark",
+    line: "bg-plum/30",
   },
   {
     step: "03",
-    title: "Get Your Care Plan",
-    description: "Receive a personalised care plan tailored to your symptoms, lifestyle, and goals — including evidence-based treatment options.",
-    color: "from-ocean to-accent",
+    title: "Receive Your Personalised Plan",
+    description: "A care plan tailored to you — covering hormones, mental health, nutrition, and lifestyle. With prescriptions and medication delivered to your door.",
+    color: "from-sage-dark to-sage",
+    line: "bg-sage/40",
   },
   {
     step: "04",
-    title: "Ongoing Support",
-    description: "Track your progress daily. Get coaching on sleep, nutrition, and mood between appointments. Your care doesn't stop when the consult ends.",
-    color: "from-sage-dark to-accent",
+    title: "Ongoing Care & Support",
+    description: "Follow-ups, progress tracking, plan adjustments, and messaging with your care team. Because this journey doesn't end after one appointment.",
+    color: "from-gold to-terracotta",
+    line: "",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-16 sm:py-24 bg-white">
+    <section id="how-it-works" className="py-20 sm:py-32 bg-background relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-2">
+        <div className="animate-on-scroll text-center mb-20">
+          <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark mb-3">
             How It Works
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-            Your path to feeling like yourself again
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+            Your path to feeling
+            <br />
+            <span className="text-gradient">like yourself again</span>
           </h2>
+          <p className="mt-6 text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed">
+            One platform. One care team. One clear plan.
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="stagger-children max-w-3xl mx-auto space-y-0">
           {steps.map((step, i) => (
-            <div key={step.step} className="relative">
-              {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-sand to-transparent -translate-x-4" />
-              )}
-              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${step.color} text-white flex items-center justify-center text-lg font-bold mb-5`}>
-                {step.step}
+            <div key={step.step} className="relative flex gap-6 sm:gap-10">
+              {/* Timeline */}
+              <div className="flex flex-col items-center">
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} text-white flex items-center justify-center text-xl font-bold shadow-lg shrink-0`}>
+                  {step.step}
+                </div>
+                {i < steps.length - 1 && (
+                  <div className={`w-0.5 flex-1 my-2 ${step.line} min-h-[60px]`} />
+                )}
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-foreground/60 text-sm leading-relaxed">{step.description}</p>
+
+              {/* Content */}
+              <div className="pb-12">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground mb-2 pt-3">{step.title}</h3>
+                <p className="text-foreground/60 leading-relaxed">{step.description}</p>
+              </div>
             </div>
           ))}
         </div>

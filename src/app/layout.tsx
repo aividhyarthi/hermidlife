@@ -1,19 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollRevealProvider from "@/components/ScrollRevealProvider";
 
 export const metadata: Metadata = {
-  title: "HerMidlife — Australia's AI-Powered Perimenopause Care Platform",
+  title: "HerMidlife — Finally, care that listens to women in midlife",
   description:
-    "End-to-end perimenopause care for 7 million Australian women. AI symptom tracking, telehealth consults, coaching, and employer benefits.",
+    "Doctor-led, personalised care for perimenopause, menopause and beyond. The first fully integrated platform for midlife care — combining medical expertise, emotional understanding, and continuous support. Built for Australian women.",
   keywords: [
     "perimenopause",
     "menopause",
+    "midlife health",
     "women's health",
     "telehealth",
     "Australia",
-    "AI health",
+    "menopause care",
     "HRT",
     "hormone therapy",
+    "midlife care platform",
+    "workplace wellness",
   ],
 };
 
@@ -24,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased scroll-smooth">
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <ScrollRevealProvider>{children}</ScrollRevealProvider>
+      </body>
     </html>
   );
 }
