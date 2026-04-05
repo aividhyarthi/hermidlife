@@ -5,6 +5,7 @@ const steps = [
     description: "A guided intake that maps your hormonal health, lifestyle, and symptoms — creating a personalised profile your care team can act on immediately.",
     color: "from-rose to-rose-dark",
     line: "bg-rose/30",
+    image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&h=300&fit=crop",
   },
   {
     step: "02",
@@ -12,6 +13,7 @@ const steps = [
     description: "Connect with a midlife-trained GP via telehealth. No more being told it's just stress. Get real answers and a clear diagnosis — same day.",
     color: "from-plum to-rose-dark",
     line: "bg-plum/30",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop",
   },
   {
     step: "03",
@@ -19,6 +21,7 @@ const steps = [
     description: "A care plan tailored to you — covering hormones, mental health, nutrition, and lifestyle. With prescriptions and medication delivered to your door.",
     color: "from-sage-dark to-sage",
     line: "bg-sage/40",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop",
   },
   {
     step: "04",
@@ -26,6 +29,7 @@ const steps = [
     description: "Follow-ups, progress tracking, plan adjustments, and messaging with your care team. Because this journey doesn't end after one appointment.",
     color: "from-gold to-terracotta",
     line: "",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
   },
 ];
 
@@ -47,23 +51,34 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="stagger-children max-w-3xl mx-auto space-y-0">
+        <div className="stagger-children max-w-5xl mx-auto space-y-8">
           {steps.map((step, i) => (
-            <div key={step.step} className="relative flex gap-6 sm:gap-10">
-              {/* Timeline */}
-              <div className="flex flex-col items-center">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} text-white flex items-center justify-center text-xl font-bold shadow-lg shrink-0`}>
-                  {step.step}
+            <div key={step.step} className={`flex flex-col ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-10 items-center`}>
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <div className="rounded-3xl overflow-hidden shadow-lg">
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="w-full h-56 sm:h-64 object-cover"
+                  />
                 </div>
-                {i < steps.length - 1 && (
-                  <div className={`w-0.5 flex-1 my-2 ${step.line} min-h-[60px]`} />
-                )}
               </div>
 
               {/* Content */}
-              <div className="pb-12">
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground mb-2 pt-3">{step.title}</h3>
-                <p className="text-foreground/60 leading-relaxed">{step.description}</p>
+              <div className="w-full md:w-1/2 flex gap-5">
+                <div className="flex flex-col items-center shrink-0">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${step.color} text-white flex items-center justify-center text-lg font-bold shadow-lg`}>
+                    {step.step}
+                  </div>
+                  {i < steps.length - 1 && (
+                    <div className={`w-0.5 flex-1 my-2 ${step.line} min-h-[40px] hidden md:block`} />
+                  )}
+                </div>
+                <div className="pt-2">
+                  <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground mb-2">{step.title}</h3>
+                  <p className="text-foreground/60 leading-relaxed">{step.description}</p>
+                </div>
               </div>
             </div>
           ))}

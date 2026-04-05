@@ -64,7 +64,7 @@ export default function Services() {
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-lavender-light/40 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="animate-on-scroll text-center mb-16">
+        <div className="animate-on-scroll text-center mb-6">
           <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark mb-3">
             What We Treat
           </p>
@@ -76,6 +76,24 @@ export default function Services() {
           <p className="mt-6 text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed">
             Not just hormones. We treat the full spectrum of midlife health — because everything is connected.
           </p>
+        </div>
+
+        {/* Featured image banner */}
+        <div className="animate-on-scroll mb-14">
+          <div className="relative rounded-3xl overflow-hidden max-w-5xl mx-auto shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&h=400&fit=crop"
+              alt="Holistic wellness and health"
+              className="w-full h-48 sm:h-64 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/30 to-transparent" />
+            <div className="absolute inset-0 flex items-center px-8 sm:px-12">
+              <p className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-white max-w-md leading-snug">
+                Hormones. Mind. Body. Heart. Gut.
+                <span className="block text-rose-light mt-1">All connected. All cared for.</span>
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="stagger-children grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
