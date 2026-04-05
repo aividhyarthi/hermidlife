@@ -67,22 +67,31 @@ export default function WhyUs() {
           })}
         </div>
 
-        {/* Cultural sensitivity callout */}
-        <div className="animate-on-scroll mt-12 max-w-3xl mx-auto">
-          <div className="bg-beige-light rounded-3xl p-8 sm:p-10 text-center border border-champagne">
-            <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
-              <svg className="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 003 12c0-1.605.42-3.113 1.157-4.418" />
-              </svg>
+        {/* Cultural sensitivity callout with image */}
+        <div className="animate-on-scroll mt-12 max-w-4xl mx-auto">
+          <div className="bg-beige-light rounded-3xl overflow-hidden border border-champagne grid md:grid-cols-2 gap-0">
+            <div className="p-8 sm:p-10 flex flex-col justify-center">
+              <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-5">
+                <svg className="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 003 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+              </div>
+              <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+                Built for real women
+              </h3>
+              <p className="text-lg text-foreground/60 leading-relaxed">
+                We understand that culture, lifestyle, and beliefs shape your health.
+                Your care plan reflects <em>you</em> — fully. Multicultural sensitivity isn&apos;t an add-on;
+                it&apos;s built into everything we do.
+              </p>
             </div>
-            <h3 className="font-display text-2xl font-bold text-foreground mb-3">
-              Built for real women
-            </h3>
-            <p className="text-lg text-foreground/60 leading-relaxed max-w-xl mx-auto">
-              We understand that culture, lifestyle, and beliefs shape your health.
-              Your care plan reflects <em>you</em> — fully. Multicultural sensitivity isn&apos;t an add-on;
-              it&apos;s built into everything we do.
-            </p>
+            <div className="hidden md:block">
+              <img
+                src="https://images.pexels.com/photos/4266938/pexels-photo-4266938.jpeg?auto=compress&cs=tinysrgb&w=500&h=400&fit=crop"
+                alt="Doctor and patient reviewing health plan together on tablet"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

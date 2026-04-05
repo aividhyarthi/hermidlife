@@ -29,19 +29,29 @@ export default function B2B() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-sage/10 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="animate-on-scroll text-center mb-16">
-          <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark mb-3">
-            For Employers & Partners
-          </p>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-            Support the women
-            <br />
-            <span className="text-gradient-sage">in your workplace</span>
-          </h2>
-          <p className="mt-6 text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed">
-            Partner with HerMidlife to provide world-class midlife health support
-            for your employees. Improve retention, wellbeing, and productivity.
-          </p>
+        {/* Header with image */}
+        <div className="animate-on-scroll grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-sage-dark mb-3">
+              For Employers & Partners
+            </p>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              Support the women
+              <br />
+              <span className="text-gradient-sage">in your workplace</span>
+            </h2>
+            <p className="mt-6 text-lg text-foreground/60 leading-relaxed">
+              Partner with HerMidlife to provide world-class midlife health support
+              for your employees. Improve retention, wellbeing, and productivity.
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <img
+              src="https://images.pexels.com/photos/3810793/pexels-photo-3810793.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Women collaborating at a meeting in the workplace"
+              className="rounded-3xl shadow-xl object-cover w-full h-[300px]"
+            />
+          </div>
         </div>
 
         <div className="stagger-children grid md:grid-cols-3 gap-6 mb-14">
