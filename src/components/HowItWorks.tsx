@@ -76,7 +76,7 @@ export default function HowItWorks() {
                 <img
                   src={step.image}
                   alt={step.imageAlt}
-                  className="rounded-2xl shadow-lg object-cover w-full h-[220px]"
+                  className="rounded-2xl shadow-lg object-cover object-top w-full h-[220px]"
                 />
               </div>
             </div>

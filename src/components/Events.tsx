@@ -49,7 +49,7 @@ export default function Events() {
               <img
                 src={item.image}
                 alt={item.imageAlt}
-                className="w-full h-[200px] object-cover"
+                className="w-full h-[200px] object-cover object-top"
               />
               <div className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-2">{item.type}</p>

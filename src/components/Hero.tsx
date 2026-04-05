@@ -87,7 +87,7 @@ export default function Hero() {
               <img
                 src="https://images.pexels.com/photos/4584638/pexels-photo-4584638.jpeg?auto=compress&cs=tinysrgb&w=700&h=800&fit=crop"
                 alt="Confident mature woman smiling"
-                className="relative rounded-3xl object-cover w-full h-[540px] shadow-2xl"
+                className="relative rounded-3xl object-cover object-top w-full h-[540px] shadow-2xl"
               />
               <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-white/20" />
             </div>

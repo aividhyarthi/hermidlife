@@ -46,7 +46,7 @@ export default function EmotionalTruth() {
               <img
                 src="https://images.pexels.com/photos/8927460/pexels-photo-8927460.jpeg?auto=compress&cs=tinysrgb&w=700&h=700&fit=crop"
                 alt="Woman feeling stressed with hands on her face"
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[400px] object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
