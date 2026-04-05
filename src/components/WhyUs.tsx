@@ -4,28 +4,28 @@ const differentiators = [
     description: "We listen — without judgement. Your symptoms are real, your experience matters, and we take the time to understand your full story.",
     icon: "M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z",
     accent: "rose",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=300&fit=crop",
   },
   {
     title: "Truly personalised",
     description: "Your plan is built around your body, lifestyle, and culture. No cookie-cutter approaches — because every woman's experience is different.",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z",
     accent: "lavender",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=300&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1584516150909-c43483ee7a2d?w=400&h=300&fit=crop&crop=face",
   },
   {
     title: "Everything in one place",
     description: "Doctors, dietitians, psychologists, prescriptions, and follow-ups — all coordinated in one seamless platform. No more fragmented care.",
     icon: "M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z",
     accent: "sage",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=300&fit=crop",
   },
   {
     title: "Continuous support",
     description: "Your care doesn't end after one appointment. Progress tracking, plan adjustments, messaging with your care team — we're here for the long haul.",
     icon: "M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182",
     accent: "gold",
-    image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400&h=300&fit=crop",
   },
 ];
 
@@ -87,8 +87,8 @@ export default function WhyUs() {
           <div className="grid md:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-lg">
             <div className="h-64 md:h-auto">
               <img
-                src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=600&h=500&fit=crop&crop=face"
-                alt="Diverse women supporting each other"
+                src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&h=500&fit=crop&crop=face"
+                alt="Diverse group of women from different cultural backgrounds"
                 className="w-full h-full object-cover"
               />
             </div>

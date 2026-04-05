@@ -4,7 +4,7 @@ export default function Banner() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?w=1400&h=600&fit=crop"
+          src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=1400&h=600&fit=crop"
           alt=""
           className="w-full h-full object-cover"
         />

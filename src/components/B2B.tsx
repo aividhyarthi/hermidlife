@@ -33,8 +33,8 @@ export default function B2B() {
         <div className="animate-on-scroll mb-16 rounded-3xl overflow-hidden shadow-xl">
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=450&fit=crop"
-              alt="Diverse team collaborating in modern workplace"
+              src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=1200&h=450&fit=crop"
+              alt="Professional women collaborating in modern workplace"
               className="w-full h-64 sm:h-80 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />

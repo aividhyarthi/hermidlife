@@ -76,19 +76,19 @@ export default function Hero() {
           {/* Right — hero image collage */}
           <div className="hidden lg:block relative">
             <div className="relative w-full h-[520px]">
-              {/* Main image */}
+              {/* Main image — mature woman, confident, warm */}
               <div className="absolute top-0 right-0 w-80 h-96 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/80">
                 <img
-                  src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&h=750&fit=crop&crop=face"
-                  alt="Confident woman smiling"
+                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=750&fit=crop&crop=face"
+                  alt="Confident mature woman smiling warmly"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Secondary image */}
+              {/* Secondary image — woman in her 40s-50s, relaxed */}
               <div className="absolute bottom-0 left-0 w-64 h-72 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/80">
                 <img
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=560&fit=crop&crop=face"
-                  alt="Professional woman in wellness setting"
+                  src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?w=500&h=560&fit=crop&crop=face"
+                  alt="Woman in midlife enjoying a peaceful moment"
                   className="w-full h-full object-cover"
                 />
               </div>
