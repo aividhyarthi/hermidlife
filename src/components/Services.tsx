@@ -82,8 +82,8 @@ export default function Services() {
         <div className="animate-on-scroll mb-14">
           <div className="relative rounded-3xl overflow-hidden max-w-5xl mx-auto shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=400&fit=crop"
-              alt="Woman practicing yoga and holistic wellness"
+              src="https://images.pexels.com/photos/8759857/pexels-photo-8759857.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&dpr=1"
+              alt="Group of women together at the beach — holistic health"
               className="w-full h-48 sm:h-64 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 via-foreground/30 to-transparent" />

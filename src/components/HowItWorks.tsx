@@ -5,7 +5,7 @@ const steps = [
     description: "A guided intake that maps your hormonal health, lifestyle, and symptoms — creating a personalised profile your care team can act on immediately.",
     color: "from-rose to-rose-dark",
     line: "bg-rose/30",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop",
+    image: "https://images.pexels.com/photos/3808818/pexels-photo-3808818.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
   {
     step: "02",
@@ -13,7 +13,7 @@ const steps = [
     description: "Connect with a midlife-trained GP via telehealth. No more being told it's just stress. Get real answers and a clear diagnosis — same day.",
     color: "from-plum to-rose-dark",
     line: "bg-plum/30",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop",
+    image: "https://images.pexels.com/photos/4266944/pexels-photo-4266944.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
   {
     step: "03",
@@ -21,7 +21,7 @@ const steps = [
     description: "A care plan tailored to you — covering hormones, mental health, nutrition, and lifestyle. With prescriptions and medication delivered to your door.",
     color: "from-sage-dark to-sage",
     line: "bg-sage/40",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop",
+    image: "https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
   {
     step: "04",
@@ -29,7 +29,7 @@ const steps = [
     description: "Follow-ups, progress tracking, plan adjustments, and messaging with your care team. Because this journey doesn't end after one appointment.",
     color: "from-gold to-terracotta",
     line: "",
-    image: "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=400&h=300&fit=crop",
+    image: "https://images.pexels.com/photos/5206923/pexels-photo-5206923.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
 ];
 

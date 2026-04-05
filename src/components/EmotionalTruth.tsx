@@ -7,8 +7,8 @@ export default function EmotionalTruth() {
           <div className="animate-on-scroll relative">
             <div className="relative rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=700&h=800&fit=crop&crop=face"
-                alt="Woman feeling exhausted and unheard about her symptoms"
+                src="https://images.pexels.com/photos/3808818/pexels-photo-3808818.jpeg?auto=compress&cs=tinysrgb&w=700&h=800&dpr=1"
+                alt="Tired woman feeling exhausted and unheard"
                 className="w-full h-[420px] sm:h-[500px] object-cover"
               />
               {/* Overlay card */}

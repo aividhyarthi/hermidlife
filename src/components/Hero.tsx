@@ -79,7 +79,7 @@ export default function Hero() {
               {/* Main image — mature woman, confident, warm */}
               <div className="absolute top-0 right-0 w-80 h-96 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/80">
                 <img
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=750&fit=crop&crop=face"
+                  src="https://images.pexels.com/photos/3764011/pexels-photo-3764011.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=1"
                   alt="Confident mature woman smiling warmly"
                   className="w-full h-full object-cover"
                 />
@@ -87,8 +87,8 @@ export default function Hero() {
               {/* Secondary image — woman in her 40s-50s, relaxed */}
               <div className="absolute bottom-0 left-0 w-64 h-72 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/80">
                 <img
-                  src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?w=500&h=560&fit=crop&crop=face"
-                  alt="Woman in midlife enjoying a peaceful moment"
+                  src="https://images.pexels.com/photos/6303645/pexels-photo-6303645.jpeg?auto=compress&cs=tinysrgb&w=500&h=560&dpr=1"
+                  alt="Woman patient consulting with her doctor"
                   className="w-full h-full object-cover"
                 />
               </div>
