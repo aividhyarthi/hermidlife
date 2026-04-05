@@ -41,9 +41,9 @@ export default function WhyUs() {
             Why HerMidlife
           </p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-            Care that&apos;s different —
+            Care that feels different —
             <br />
-            <span className="text-gradient">because you deserve different</span>
+            <span className="text-gradient">because it&apos;s built around you, and you&apos;re worth it.</span>
           </h2>
         </div>
 
@@ -77,7 +77,7 @@ export default function WhyUs() {
                 </svg>
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-3">
-                Built for real women
+                Holistic care for women&apos;s midlife health
               </h3>
               <p className="text-lg text-foreground/60 leading-relaxed">
                 We understand that culture, lifestyle, and beliefs shape your health.

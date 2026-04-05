@@ -40,7 +40,10 @@ export default function B2B() {
               <br />
               <span className="text-gradient-sage">in your workplace</span>
             </h2>
-            <p className="mt-6 text-lg text-foreground/60 leading-relaxed">
+            <p className="mt-4 text-base font-semibold text-sage-dark italic">
+              Australia is finally investing in Women&apos;s Health.
+            </p>
+            <p className="mt-4 text-lg text-foreground/60 leading-relaxed">
               Partner with HerMidlife to provide world-class midlife health support
               for your employees. Improve retention, wellbeing, and productivity.
             </p>

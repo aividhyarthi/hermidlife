@@ -5,10 +5,10 @@ const team = [
     description: "Leading HerMidlife's vision to transform perimenopause care for Australian women through technology and compassion.",
     gradient: "from-rose via-rose-dark to-plum",
     initials: "AS",
-    photo: null,
+    photo: "/dr-archana.jpeg",
   },
   {
-    name: "Dr. Padma",
+    name: "Dr. Padma Gadiyar",
     role: "CBO",
     description: "Driving business growth and partnerships to bring HerMidlife's care platform to women across Australia.",
     gradient: "from-sage via-sage-dark to-plum",

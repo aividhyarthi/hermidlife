@@ -21,10 +21,10 @@ export default function Hero() {
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] text-foreground tracking-tight">
-              Finally, care that
+              Finally, a place where
               <br />
               <span className="text-gradient italic">
-                listens to women in midlife.
+                women are heard and not judged.
               </span>
             </h1>
 

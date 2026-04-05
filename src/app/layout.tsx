@@ -3,7 +3,7 @@ import "./globals.css";
 import ScrollRevealProvider from "@/components/ScrollRevealProvider";
 
 export const metadata: Metadata = {
-  title: "HerMidlife — Finally, care that listens to women in midlife",
+  title: "HerMidlife — Finally, a place where women are heard and not judged",
   description:
     "Doctor-led, personalised care for perimenopause, menopause and beyond. The first fully integrated platform for midlife care — combining medical expertise, emotional understanding, and continuous support. Built for Australian women.",
   keywords: [

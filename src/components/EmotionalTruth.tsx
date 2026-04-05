@@ -36,7 +36,7 @@ export default function EmotionalTruth() {
             </p>
             <p className="text-lg text-foreground/60 leading-relaxed">
               At HerMidlife, we don&apos;t dismiss your symptoms.
-              We understand them — and treat them properly.
+              We understand them, and treat them with a patient-first approach.
             </p>
           </div>
 
