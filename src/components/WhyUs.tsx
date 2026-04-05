@@ -4,28 +4,24 @@ const differentiators = [
     description: "We listen — without judgement. Your symptoms are real, your experience matters, and we take the time to understand your full story.",
     icon: "M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z",
     accent: "rose",
-    image: "https://images.pexels.com/photos/5327584/pexels-photo-5327584.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
   {
     title: "Truly personalised",
     description: "Your plan is built around your body, lifestyle, and culture. No cookie-cutter approaches — because every woman's experience is different.",
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z",
     accent: "lavender",
-    image: "https://images.pexels.com/photos/7088531/pexels-photo-7088531.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
   {
     title: "Everything in one place",
     description: "Doctors, dietitians, psychologists, prescriptions, and follow-ups — all coordinated in one seamless platform. No more fragmented care.",
     icon: "M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z",
     accent: "sage",
-    image: "https://images.pexels.com/photos/5593720/pexels-photo-5593720.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
   {
     title: "Continuous support",
     description: "Your care doesn't end after one appointment. Progress tracking, plan adjustments, messaging with your care team — we're here for the long haul.",
     icon: "M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182",
     accent: "gold",
-    image: "https://images.pexels.com/photos/5206923/pexels-photo-5206923.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1",
   },
 ];
 
@@ -51,62 +47,42 @@ export default function WhyUs() {
           </h2>
         </div>
 
-        <div className="stagger-children grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="stagger-children grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {differentiators.map((item) => {
             const colors = accentMap[item.accent];
             return (
               <div
                 key={item.title}
-                className="bg-white border border-foreground/5 rounded-3xl overflow-hidden card-lift shadow-sm"
+                className={`${colors.bg} border ${colors.border} rounded-3xl p-8 card-lift`}
               >
-                {/* Image */}
-                <div className="h-44 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                  />
+                <div className={`w-14 h-14 rounded-2xl bg-white/60 ${colors.icon} flex items-center justify-center mb-5`}>
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.icon} />
+                  </svg>
                 </div>
-                {/* Content */}
-                <div className={`${colors.bg}/30 p-7`}>
-                  <div className={`w-10 h-10 rounded-xl bg-white/60 ${colors.icon} flex items-center justify-center mb-4`}>
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.icon} />
-                    </svg>
-                  </div>
-                  <h3 className="font-display text-xl font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/60 leading-relaxed">{item.description}</p>
-                </div>
+                <h3 className="font-display text-xl font-bold text-foreground mb-3">{item.title}</h3>
+                <p className="text-foreground/60 leading-relaxed">{item.description}</p>
               </div>
             );
           })}
         </div>
 
         {/* Cultural sensitivity callout */}
-        <div className="animate-on-scroll mt-14 max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-lg">
-            <div className="h-64 md:h-auto">
-              <img
-                src="https://images.pexels.com/photos/8759820/pexels-photo-8759820.jpeg?auto=compress&cs=tinysrgb&w=600&h=500&dpr=1"
-                alt="Group of diverse women smiling together"
-                className="w-full h-full object-cover"
-              />
+        <div className="animate-on-scroll mt-12 max-w-3xl mx-auto">
+          <div className="bg-beige-light rounded-3xl p-8 sm:p-10 text-center border border-champagne">
+            <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
+              <svg className="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 003 12c0-1.605.42-3.113 1.157-4.418" />
+              </svg>
             </div>
-            <div className="bg-beige-light p-8 sm:p-10 flex flex-col justify-center">
-              <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-5">
-                <svg className="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 003 12c0-1.605.42-3.113 1.157-4.418" />
-                </svg>
-              </div>
-              <h3 className="font-display text-2xl font-bold text-foreground mb-3">
-                Built for real women
-              </h3>
-              <p className="text-foreground/60 leading-relaxed">
-                We understand that culture, lifestyle, and beliefs shape your health.
-                Your care plan reflects <em>you</em> — fully. Multicultural sensitivity isn&apos;t an add-on;
-                it&apos;s built into everything we do.
-              </p>
-            </div>
+            <h3 className="font-display text-2xl font-bold text-foreground mb-3">
+              Built for real women
+            </h3>
+            <p className="text-lg text-foreground/60 leading-relaxed max-w-xl mx-auto">
+              We understand that culture, lifestyle, and beliefs shape your health.
+              Your care plan reflects <em>you</em> — fully. Multicultural sensitivity isn&apos;t an add-on;
+              it&apos;s built into everything we do.
+            </p>
           </div>
         </div>
       </div>

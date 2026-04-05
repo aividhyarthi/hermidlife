@@ -1,16 +1,10 @@
 export default function Banner() {
   return (
     <section className="relative overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.pexels.com/photos/8815058/pexels-photo-8815058.jpeg?auto=compress&cs=tinysrgb&w=1400&h=600&dpr=1"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 gradient-cta opacity-90" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.12),transparent_50%)]" />
-      </div>
+      {/* Gradient background */}
+      <div className="absolute inset-0 gradient-cta" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.12),transparent_50%)]" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.08),transparent_40%)]" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 sm:py-28">
         <div className="animate-on-scroll max-w-3xl mx-auto text-center text-white">
