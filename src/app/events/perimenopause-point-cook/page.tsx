@@ -32,7 +32,7 @@ export default function PerimenopausePointCookEvent() {
       <Header />
 
       {/* HERO — dark plum, matches the flyer */}
-      <section className="gradient-event sparkle-bg relative overflow-hidden">
+      <section className="gradient-event relative overflow-hidden">
         {/* Ambient blurred orbs */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute top-20 left-[10%] w-80 h-80 rounded-full bg-rose/20 blur-3xl" />
@@ -50,6 +50,23 @@ export default function PerimenopausePointCookEvent() {
             </svg>
             Back to all events
           </Link>
+
+          {/* Colourful top badges */}
+          <div className="flex flex-wrap gap-2.5 mb-8">
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-rose to-rose-dark text-white shadow-lg">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+              Free Entry
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-gold to-terracotta text-white shadow-lg">
+              Complimentary Lunch
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-sage to-sage-dark text-white shadow-lg">
+              Limited Seats
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/15 backdrop-blur-md text-white border border-white/30">
+              For Women 35+
+            </span>
+          </div>
 
           {/* Brand mark */}
           <div className="mb-10">
@@ -325,8 +342,73 @@ export default function PerimenopausePointCookEvent() {
         </div>
       </section>
 
+      {/* QR Code — scan to register */}
+      <section className="py-20 sm:py-28 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="absolute inset-0 gradient-cta" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(255,255,255,0.2),transparent_50%)]" />
+
+            <div className="relative z-10 grid md:grid-cols-2 gap-10 p-8 sm:p-12 items-center">
+              <div className="text-white">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-3">
+                  Scan to Register
+                </p>
+                <h2 className="font-display text-3xl sm:text-4xl font-bold leading-tight mb-5">
+                  Secure your seat
+                  <br />
+                  in seconds.
+                </h2>
+                <p className="text-white/90 text-base sm:text-lg leading-relaxed mb-6">
+                  Point your phone camera at the QR code to register instantly. No
+                  forms, no payment — just show up and be seen, heard, and supported.
+                </p>
+                <ul className="space-y-2.5 text-white/95 text-sm sm:text-base">
+                  <li className="flex items-center gap-2">
+                    <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    100% free — no ticket fees
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    Complimentary lunch included
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    Expert doctors & practitioners
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="bg-white rounded-3xl p-6 shadow-2xl">
+                  <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=10&data=https%3A%2F%2Fhermidlife-production.up.railway.app%2Fevents%2Fperimenopause-point-cook"
+                    alt="QR code to register for the Point Cook event"
+                    width={280}
+                    height={280}
+                    className="w-[260px] h-[260px] block"
+                  />
+                </div>
+                <p className="mt-5 text-white font-display text-lg font-bold text-center">
+                  Scan with your phone camera
+                </p>
+                <p className="text-white/80 text-xs uppercase tracking-widest text-center mt-1">
+                  Or tap the button below
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA — plum gradient matching hero */}
-      <section className="gradient-event sparkle-bg relative overflow-hidden">
+      <section className="gradient-event relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute top-10 right-[10%] w-80 h-80 rounded-full bg-rose/15 blur-3xl" />
           <div className="absolute bottom-10 left-[15%] w-72 h-72 rounded-full bg-gold/10 blur-3xl" />
